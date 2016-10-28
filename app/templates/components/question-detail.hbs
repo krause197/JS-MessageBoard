@@ -1,10 +1,10 @@
 <div class="questionDetail">
-  <h2>{{model.text}}</h2>
-  <h4>Asked By {{model.author}}</h4>
-  <p>{{model.notes}}</p>
-  <p>{{model.tags}}</p>
+  <h2>{{question.text}}</h2>
+  <h4>Asked By {{question.author}}</h4>
+  <p>{{question.notes}}</p>
+  <p>{{question.tags}}</p>
   <div class="edit">
-    {{edit-question question=question edit="edit" destroyQuestion="destroyQuestion"}}
-    <button {{action 'delete' question}}>Delete Question</button>
+    {{edit-question question=question edit="edit"}}
   </div>
+  <button {{action 'delete' question}}>Delete Question</button>
 </div>

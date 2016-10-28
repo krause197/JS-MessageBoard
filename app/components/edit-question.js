@@ -15,7 +15,7 @@ export default Ember.Component.extend({
         tags: this.get('tags'),
       };
       this.set('editQuestionForm', false);
-      this.sendAction('edit', post, params);
+      this.sendAction('edit', question, params);
     }
   }
 });
