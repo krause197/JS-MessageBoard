@@ -1,1 +1,6 @@
-{{yield}}
+<div class="questionTile">
+  <li>
+    {{#link-to 'question' question.id}}{{question.text}}{{/link-to}}
+    Asked By {{question.author}}
+  </li>
+</div>
