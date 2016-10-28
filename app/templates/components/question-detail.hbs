@@ -4,6 +4,7 @@
   <p>{{model.notes}}</p>
   <p>{{model.tags}}</p>
   <div class="edit">
-    {{edit-question question=question edit="edit"}}
+    {{edit-question question=question edit="edit" destroyQuestion="destroyQuestion"}}
+    <button {{action 'delete' question}}>Delete Question</button>
   </div>
 </div>
