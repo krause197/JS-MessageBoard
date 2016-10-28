@@ -17,6 +17,13 @@ module.exports = function(environment) {
       }
     },
 
+      firebase: {
+        apiKey: "AIzaSyCQzN5bRuKclCWyr6JO8xKryxYTezsoldE",
+        authDomain: "js-messageboard.firebaseapp.com",
+        databaseURL: "https://js-messageboard.firebaseio.com",
+        storageBucket: 'js-messageboard.appspot.com',
+      },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
