@@ -1,1 +1,13 @@
-  {{question-detail question=model edit="edit" destroyQuestion="destroyQuestion"}}
+{{question-detail question=model.question edit="edit" destroyQuestion="destroyQuestion"}}
+
+
+<div class="answer">
+  <h2> Answers to this Question </h2>
+  <ul>
+    {{#each model.question.answers as |answer|}}
+      {{answer-tile answer=answer}}
+    {{/each}}
+  </ul>
+</div>
+
+{{new-answer saveAnswer="saveAnswer" question=model.question}}
