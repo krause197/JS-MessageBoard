@@ -4,7 +4,7 @@
     <div>
       <form>
         <div class="form-group">
-          <label for="text">Question</label>
+          <label for="text">Question Title</label>
           {{input value=text id="text"}}
         </div>
 
@@ -15,7 +15,7 @@
 
         <div class="form-group">
           <label for="notes">Additional Notes</label>
-          {{input value=notes id="notes"}}
+          {{text area value=notes id="notes" cols="30" rows="7"}}
         </div>
 
         <button {{action 'saveQuestion1'}}>Save</button>
