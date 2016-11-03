@@ -8,3 +8,12 @@
   </div>
   <button {{action 'delete' question}}>Delete Question</button>
 </div>
+
+<div class="answer">
+  <h2> Answers to this Question </h2>
+  <ul>
+    {{#each question.answers as |answer|}}
+      {{answer-tile answer=answer}}
+    {{/each}}
+  </ul>
+</div>
