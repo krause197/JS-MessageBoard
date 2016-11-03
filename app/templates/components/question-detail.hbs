@@ -14,6 +14,7 @@
   <ul>
     {{#each question.answers as |answer|}}
       {{answer-tile answer=answer}}
+      {{edit-answer answer=answer editAnswer="editAnswer"}}
     {{/each}}
   </ul>
 </div>
